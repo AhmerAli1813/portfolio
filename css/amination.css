@@ -1,0 +1,100 @@
+.profile span{
+    animation: aminate 5s linear infinite;
+   }
+   @keyframes  aminate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+    }
+    
+    10%{
+     opacity: 1; 
+    }
+    90%{opacity: 1; transform: translateZ(100%);}
+    100%{
+        transform: scale(1)  translateY(500%) rotate(360deg);
+    }
+}
+.img-border i{
+    animation: aminate 5s linear infinite;
+   }
+.circle{  animation: rotate3 15s  ease  infinite;}
+.circle::before{animation: rotate 5s  ease-in  infinite;}
+.circle::after{ animation: rotate2 10s  ease-in-out  infinite;}
+@keyframes rotate  {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+       100%{
+           transform: rotate(360deg);
+       }
+   }
+ 
+   @keyframes rotate2  {
+       0%{
+           opacity: 0;
+       }
+       10%{
+           opacity: 1;
+       }
+       90%{
+           opacity: 1;
+       }
+          100%{
+              transform: rotate(-360deg);
+          }
+      }
+      @keyframes rotate3  {
+       0%{
+           opacity: 0;
+       }
+       10%{
+           opacity: 1;
+       }
+       90%{
+           opacity: 1;
+       }
+          100%{
+              transform:rotateZ(-360deg);
+          }
+      }
+.slider-content h1{
+    animation: fadein 0.8s ease 0s 1 ;
+}   
+@keyframes fadein {
+    0%{transform: translateY(-200px); opacity: 0;}
+    60%{transform: translateY(-40px); opacity: 0;}
+    100%{transform: translateY(0px); opacity: 1;}
+}
+.slider-content h3{
+    animation: zoomin 0.9s ease-in-out 0.2s 1 ;
+}   
+
+@keyframes zoomin {
+    0%{transform: scale(0); opacity: 0;}
+    
+    100%{transform: scale(1); opacity: 1;}
+}
+.slider-content p{
+    animation: fadeleft 1.5s linear 0.3s 1 ;   
+}
+
+@keyframes fadeleft {
+    0%{transform: translateX(-100%); opacity: 0;}
+    
+    100%{transform: translateX(0%); opacity: 1;}
+}
+.slider-content .btn-group{
+    animation: faderight 2s linear 0.8s 1 ;      
+}
+@keyframes faderight {
+    0%{transform: translateX(100%); opacity: 0;}
+    60%{opacity: 0;}
+    100%{transform: translateX(0%); opacity: 1;}
+}

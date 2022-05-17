@@ -1,0 +1,520 @@
+:root{
+    --lightgreen1:#1abc9c;
+    --lightgreen2:#2ecc71;
+    --darkgreen1:#16a085;
+    --darkgreen2:#27ae60;
+
+}
+body{
+    width: 100%;
+}
+hr{color: gray; background: gray;}
+.margin-top-50{
+    margin-top: 50px;
+}
+.z-index-0{z-index: 0;}
+.container-fluid{
+    position: relative;
+    height: 100vh;
+background: blue;    
+}
+.container{
+position: relative;
+height: 100vh;
+background: red;
+}
+.profile{
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+.profile header{
+    position: absolute;
+        width: 95%;
+margin-top: 40px;
+    z-index: 10000;
+    background: var(--darkgreen1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+transition: 0.5s;
+}
+.profile header.sticky{margin-top: 0; background: var(--lightgreen1);}
+.profile span{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    pointer-events: none;
+   
+    clip-path: polygon( 20% 0% , 80% 0%, 100% 20%, 100% 80%,80% 100%, 20% 100%, 0% 80%, 0% 20% );
+    
+}
+
+#mynavbar{
+    width: 80%;
+    height: 100%;
+ 
+
+}
+ul{
+    list-style: none;
+}
+#mynavbar .nav{
+    float: right;
+}
+#menu-bar{
+    width: 5%;
+font-size: 21px;
+color: white;
+}
+.navbar-brand{
+    width: 5% !important;height: 100%;
+    color: white;
+    margin-left: 20px;
+    text-transform:capitalize;
+}
+.nav-link{
+    text-transform:capitalize;
+    padding-left: 10px !important;
+}
+.nav-link:hover{
+    box-shadow:     0 0 5px var(--lightgreen1),
+    0 0 10px var(--lightgreen1),
+    0 0 15px var(--lightgreen1),    
+    0 0 20px var(--lightgreen1);
+    
+    color: white !important;
+background: var(--lightgreen1);
+                }
+        
+.circle{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 40%;
+    right: 10%;
+
+    clip-path: polygon( 20% 0% , 80% 0%, 100% 20%, 100% 80%,80% 100%, 20% 100%, 0% 80%, 0% 20% );
+   /* background: red; */
+}
+.circle::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon( 20% 0% , 80% 0%, 100% 20%, 100% 80%,80% 100%, 20% 100%, 0% 80%, 0% 20% );
+    border: 5px solid var(--darkgreen1);
+transform: rotate(45deg);
+
+z-index: 4;
+opacity: 0.5;
+background: var(--darkgreen1);
+}
+.circle::after{
+    z-index: 5;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon( 20% 0% , 80% 0%, 100% 20%, 100% 80%,80% 100%, 20% 100%, 0% 80%, 0% 20% );
+    border: 5px solid var(--darkgreen1);
+    background: var(--darkgreen1);
+
+
+opacity: 0.5;
+}
+
+   .profile .slider-content{
+    position: absolute;
+    bottom: 30%;
+    left:2%;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.slider-content h1{
+    font-size: 2.5rem !important;
+    color: var(--darkgreen2);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 10px;
+font-family: 'Segoe UI';
+}
+.slider-content h1 sup{
+    color: black;
+    text-transform: capitalize;
+}
+.slider-content h3{
+    color: var(--info) ;
+
+}
+.slider-content p{
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+text-overflow: clip;
+}
+.btn{
+    text-transform: capitalize;
+}
+.btn-group{
+    width: 100%;
+}
+
+.slider-icons{
+    position: absolute;
+    bottom: 5%;
+    width: 40%;
+    padding: 15px 100px;
+background:linear-gradient(90deg, var(--darkgreen1), var(--info) , var(--darkgreen2));
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.slider-icons i{
+    font-size: 1.5rem ; 
+    color: white;
+}
+/* section 1 compelete */
+/* section 2 start */
+section .bio{
+    height: 100vh;
+    /* z-index: -1; */
+    background: blue;
+}
+.bio .bio-box{
+    height: 80%;
+    display: flex;
+}
+.bio h1{
+    font-size: 4rem;
+}
+.bio h2{
+    font-size: 2.5rem;
+    color: var(--darkgreen1);
+}
+.left-col{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-col{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-col .screen{
+    position: relative;
+    width: 80%;
+    height: 50%;
+    border: 25px solid black;
+    border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen img{width: 90%;}
+.screen::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    background:black;
+    bottom:  -42%;
+    left: 30%;
+    opacity: 0.9;
+}
+.screen::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    background: black;
+    bottom:  -62%;
+    left: 20%;
+    transform: translateZ(40deg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+box-shadow: 0 5px 100px black,
+            20px 0px 20px rgb(102, 101, 101),
+            -5px 0px 20px black,
+            0px 5px 20px black
+            ;
+}
+.bio-icons{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+.bio-icons .small-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--info);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+}
+.bio-icons .line{
+    width: 2px;
+    height: 40px;
+    background: var(--info);
+}
+.bio-icons .small-circle i{
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.5s;
+}
+.small-circle.active{
+    background: var(--info);
+color: white;
+
+
+}
+.small-circle:hover{background: var(--info) !important;}
+.small-circle:hover i{color: white;}
+.small-circle.active i{color: white;}
+.bio-content{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    transform: translateY(15%);
+bottom: 0;
+
+}
+.bio-content h3{text-transform: capitalize; }
+.bio-content h3 span{color: var(--info); }
+/* section 2 compeleat */
+/* section 3 start */
+#details{
+    height: 170vh;
+}
+.personal-info{
+    height: 50vh;
+    
+}
+
+.personal-info .imgbox{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.personal-info .img-border{
+position: absolute;
+top: 0;
+    width: 60%;
+    height: 80%;
+    border: 4px solid var(--darkgreen1);
+box-shadow: 
+ 0 0 5px var(--darkgreen1),
+ 0 0 10px var(--darkgreen1),
+ 0 0 15px var(--darkgreen1),
+ 0 0 20px var(--darkgreen1),
+ 0 0 25px var(--darkgreen1)
+;
+z-index: 2;
+overflow: hidden;
+}
+.img-border i{
+    position: absolute;
+    border-radius: 50%;
+} 
+.personal-info .img{
+    width: 50%;
+    height: 80%;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 
+    2px 4px 5px   gray,
+    4px 2px 10px gray ,
+    0 0 15px gray  ;
+}
+.img img{width: 100%; height: 100%;}
+
+.personal-info .personal-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+.service-info{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+.service-info .service-icons{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.service-icons:hover{
+    transform: translateY(50px)  !important;
+box-shadow: 0 20px  5px var(--info),
+            0 20px  10px var(--darkgreen2),
+            0 20px  15px var(--info),
+            0 20px  20px var(--info)
+             ;
+}
+.service-icons a{
+    font-size: 2.5rem;
+
+}
+/* section 3 Compeleate */
+/* section 4 :start here */
+#project{
+height: 150vh;
+
+}
+.gallery{
+    height: 60vh;
+margin-bottom: 25px;
+}
+.gallery .img{
+    height: 65%;
+    width: 100%;
+display: grid;
+place-items: center;
+background:linear-gradient(180deg, var(--darkgreen1), var(--info) ,var(--lightgreen1) , var(--success) ,var(--cyan) , var(--darkgreen2));
+}
+.img img{width: 100%; height: 100%;}
+.gallery .content{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+/* section 4 compelete */
+/* section 5 start */
+main{
+    position: relative;
+   height: 50vh;
+   background: var(--darkgreen1) ; 
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+}
+.mainbox .txt{
+    width: 30%;
+    position: absolute;
+    left: 5%;
+height: 50%;
+color: white;
+display: grid;
+place-items: center;
+text-align: center;
+}
+.mainbox .message{
+    position: absolute;
+   width: 50%;
+   height: 120%;
+    background:white;
+    border: 1px solid gray;
+    top: 40%;
+    right: 10%;
+    z-index: 5;
+    
+}
+form{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+}
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+}
+.form-group.active{
+    background-color: #27ae60;
+
+}
+.form-group input{
+    border: 1px solid var(--darkgreen2);
+}
+.form-group label{
+    margin-left: 2em;
+
+}
+.form-message{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+justify-content: center;
+align-items: center;
+background: var(--darkgreen2);
+flex-flow: column;
+}
+.form-message label{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    
+}
+form textarea{
+border: 2px solid gray !important;
+
+}
+.contacticons{
+    width: 100vw;
+    height: 10vh;
+    bottom: 0;
+    position: absolute;
+    background: white;
+z-index: -1;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+li{
+    padding: 12px 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
