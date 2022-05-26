@@ -26,6 +26,7 @@ const color = [
 function Createsquare(){
 const section = document.querySelector('.profile');
 const square = document.createElement('span');
+square.classList.add("blockAnimationactive");
 square.classList.add('icons');
 var size = Math.random() * 50;
 square.style.width = size + 'px';
@@ -114,10 +115,10 @@ function blockAmination(){
 
 var typed = new Typed('#textAnimation', {
   strings: [
-    "",
-      "  Ahmer ALi",
-      "  web Designer ",
-      "  UI/UX Designer",
+       "",
+      "  Hi i am  <i > Ahmer Ali</i>",
+      "  Hi i am  <i > Web Designer</i>",
+      " Hi i am  <i > UI/UX Designer</i>",
   ],
   typeSpeed: 60,
   backSpeed: 60,
