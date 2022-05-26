@@ -25,8 +25,8 @@
   <body>
     <section class="container  profile" id="home">
       <header class="fixed">
-        <div class="navbar-brand">portfolio</div>
-        <nav class="navbar navbar-expand-md navbar-dark" id="mynavbar">
+        <div class="navbar-brand ml-5">portfolio</div>
+        <nav class="navbar navbar-expand-md navbar-dark mr-5 " id="mynavbar">
           <ul class="nav ml-auto navbar-nav">
             <li class="navbar-item">
               <a href="#home" class="nav-link active">Home</a>
@@ -35,33 +35,35 @@
             
             <li class="navbar-item"><a href="#project" class="nav-link">Project</a></li>
             <li class="navbar-item"><a href="#details" class="nav-link">About</a></li>
-            <li class="navbar-item"><a href="contant" class="nav-link">Contact</a></li>
+            <li class="navbar-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="fas fa-bars d-md-none d-block mr-2" id="menu-bar"></div>
       </header>
-      <div class="circle"></div>
+      <div class="circle"> <img src="img/men3.png" alt=""></div>
       <div class="slider-content d-md-block d-none">
-        <h1><sup>Hi i am </sup> Ahmer ali</h1>
-        <h3>Web Designer</h3>
+        <h1 >Hi i am  <i id="textAnimation"> Ahmer Ali</i> </h1>
+        <!-- <h3>Web Designer</h3> -->
         <p>
-          I am we b desinger & front developer focused on clean & user_friendly
-          Experiences. Are you a New/Existing bran or startup & looking for a
+          I am web desinger & front developer focused on clean & user_friendly
+          Experiences. Are you a New/Existing brand or startup & looking for a
           website for your Business
         </p>
         <div class="btn-group">
           <button class="btn btn2" id="btn-2">hire me</button>
-          <button class="btn btn2" id="btn-3">download cV</button>
+          <a href="ahmer ali.docx" class="btn btn2" id="btn-3">download cV</a>
         </div>
       </div>
       <div class="slider-icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-whatsapp"></i>
+        <a href="" class="fab fa-facebook"></a>
+        <a href="https://www.linkedin.com/mwrite/i n/ahmerali-a5ba5" class="fab fa-linkedin"></a>
+        <a href="http://www.github.com/ahmerali1813/" class="fab fa-github" id="github"></a>
+        <a href="" class="fab fa-whatsapp"></a>
       </div>
+      
+      <div class="img"></div>
     </section>
-    <hr>
+  
     <section class="container margin-top-50 bio z-index-0" id="biol">
       <h1 data-aos="zoom-in">Power Up</h1>
       <h2 data-aos="zoom-out">Your Creativity</h2>
@@ -104,17 +106,15 @@
         </div>
       </div>
     </section>
-    <hr>
+  
      <section class="container margin-top-50 " id="details">
-      <div class="row">
-        <div class="col-12">
-          <div class="row personal-info" data-aos="fade-left">
-            <div class="col-md-6 col-12 imgbox">
+          <div class="row personal-info " data-aos="fade-left">
+            <div class="col-sm-6 col-12 imgbox">
               <div class="img-border"></div>
-              <div class="img"><img src="img/girl.jpg" alt="" /></div>
+              <div class="img"><img src="img/men2.png" alt="" /></div>
             </div>
-            <div class="col-md-6 col-12 personal-content" data-aos="fade-right">
-              <h2 class="">Personal Details</h2>
+            <div class="col-sm-6 col-12 personal-content" data-aos="fade-right">
+              <h2 class="mb-3">Personal Details</h2>
               <p>
                 Here , I focus an a rand of items and features that we use in
                 life without giving them a second thought such as Coca Cola .
@@ -125,7 +125,43 @@
               <button class="btn btn3 w-100" id="btn-5" data-aos="zoom-out-left">Learn More</button>
             </div>
           </div>
-        </div>
+      
+    <section class="container margin-top-50 skills">
+      <h2 class="mb-3 text-center">Skills</h2>
+    <div class="mb-4" data-aos="fade-left">
+      <h5 class="mb-3 text-center" > HTMl & Css</h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 95%;" >95%</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 95%;" >95%</div>
+      </div>
+    </div>
+    <div class="mb-4" data-aos="flip-up">
+      <h5 class="mb-3 text-center"> BootStrap</h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:80%" >80%</div>
+      </div>
+    </div>
+    <div class="mb-4" data-aos="fade-right">
+      <h5 class="mb-3 text-center"> JavaScript</h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%" >75%</div>
+      </div>
+    </div>
+    <div class="mb-4" data-aos="zoom-out">
+      <h5 class="mb-3 text-center"> JQuery</h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:50%" >50%</div>
+      </div>
+    </div>
+    <div class="mb-4" data-aos="fade-right">
+      <h5 class="mb-3 text-center"> Amine.js & Aos.js</h5>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:40%" >40%</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:60%" >60%</div>
+      </div>
+    </div>
+    </section> 
+      <div class="row">
         <div class="col-12 margin-top-50 service-info"  >
           <h2 class="text-center" data-aos="fade-left"> My Offered Services</h2>
           <p class="text-center" data-aos="fade-right">At About this time of year , same months after new Year's resolutions have been made and kept , <br> or  made and neglected</p>
@@ -182,7 +218,7 @@
         </div>
       </div>
     </section>
-  <hr>
+  
      <section class="container margin-top-50 " id="project">  
       <div class="row">
         <div class="col">
@@ -192,21 +228,23 @@
       </div>
           <div class="row col navbar navbar-light navbar-expand-sm mb-3">
        <div class="collapse navbar-collapse" id="navbar"> 
-            <ul class=" m-auto nav navbar-nav">
-         <li class="nav-item"><a href="" id="btn-4" class="px-4 mx-2 btn btn3 ">All</a></li>
-         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2 btn btn3">Responsive</a></li>
-         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2 btn btn3 disable">Danamic</a></li>
-         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2 btn btn3 disable">FramWork</a></li>
-         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2 btn btn3 disable">UI/Ux</a></li>
+            <ul class=" m-auto nav navbar-nav d-sm-flex  justify-content-sm-center align-items-sm-center ">
+         <li class="nav-item"><a href="" id="btn-4" class="px-4 mx-2  mb-2  mb-sm-none btn btn3 ">All</a></li>
+         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2  mb-2  mb-sm-none btn btn3">Responsive</a></li>
+         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2  mb-2  mb-sm-none btn btn3 disable">Danamic</a></li>
+         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2  mb-2  mb-sm-none btn btn3 disable">FramWork</a></li>
+         <li class="nav-item"><a href="" id="btn-7" class="px-4 mx-2  mb-2  mb-sm-none btn btn3 disable">UI/Ux</a></li>
        </ul>
       </div>
-      <button class="btn navbar-toggler" data-toggle="collapse" data-target="#navbar">
-        <span class="navbar-toggler-icons"></span>
+     
+      <button type="button" class="navbar-toggler mx-auto  " data-toggle="collapse" data-target="#navbar"> 
+        <a class="fas fa-barmenu fa-bars fa-2x"></a>
+        </button>
       </button>
      </div>
      <div class="row">
 <div class="col-sm-6 col-md-4 col-12">
-  <div class="gallery">
+  <div class="gallery" data-aos="zoom-in-up">
     <div class="img"> <img src="img/project-6.png" alt=""></div>
     <div class="content">
       <h5 class="text-center">Technical website</h5>
@@ -216,7 +254,7 @@
   </div>
 </div>
 <div class="col-sm-6 col-md-4 col-12">
-<div class="gallery">
+<div class="gallery" data-aos="zoom-in-down">
   <div class="img"> <img src="img/project-7.png" alt=""></div>
   <div class="content">
     <h5 class="text-center">Music World website</h5>
@@ -226,7 +264,7 @@
 </div>
 </div>
 <div class="col-sm-6 col-md-4 col-12">
-<div class="gallery">
+<div class="gallery" data-aos="zoom-in-left">
   <div class="img"><h5>Coming Soon</h5> </div>
   <div class="content">
     <h5 class="text-center">Metrix Website website</h5>
@@ -236,7 +274,7 @@
 </div>
 </div>
 <div class="col-sm-6 col-md-4 col-12">
-<div class="gallery">
+<div class="gallery" data-aos="zoom-in-right">
   <div class="img text-center"><h5>Coming Soon</h5></div>
   <div class="content">
     <h5 class="text-center">Coffee Shop website</h5>
@@ -246,7 +284,7 @@
 </div>
 </div>
 <div class="col-sm-6 col-md-4 col-12">
-<div class="gallery">
+<div class="gallery" data-aos="zoom-out-up">
   <div class="img"><h5>Coming Soon</h5></div>
   <div class="content">
     <h5 class="text-center">Medical Template</h5>
@@ -256,7 +294,7 @@
 </div>
 </div>
 <div class="col-sm-6 col-md-4 col-12">
-<div class="gallery">
+<div class="gallery" data-aos="zoom-out-up">
   <div class="img"><h5>Coming Soon</h5> </div>
   <div class="content">
     <h5 class="text-center">Mobile Appliance website</h5>
@@ -270,77 +308,88 @@
      
     
   </section> 
-    <hr>
-   <section class="container margin-top-50" id="contact">
-<div class="row bg-danger  ">
-<main class="mainbox col-12 row">
-  <div class="txt col-sm-12">
-    <h5>Contact Us</h5>
-    <h1>Let's talk <br> About You</h1>
-  </div>
-  <div class="message col-sm-12 ">
-    <form action="" class="form-inline">
-      <div class="form-group group">
-        <label class="mr-auto" for="">Name</label>
-        <input type="text" onkeypress="valid(this)" class="form-control valid  w-75" placeholder="Enter Your Name" required>
-      </div>
-      <div class="form-group group2">
-        <label class="mr-auto" for="">Phone</label>
-        <input  onkeypress="valid2()" type="tel" class="form-control valid2  w-75" placeholder="phone number" required>
-      </div>
-      <div class="form-group group3">
-        <label class="mr-auto"  id="email" for="">Email</label>
-        <input  onkeypress="valid3()" type="email" class="form-control email  valid3 w-75" placeholder="Enter Your Email" required>
-      </div>
-      <div class="form-message">
-
-        <label for="">Message</label>
-        <textarea  name="" id="" cols="30" rows="5" class="ml-auto form-control"></textarea>
-      
-      </div>
-    <button type="submit" class="btn btn2 w-100 d-block" id="btn-2">Send <i class="fas fa-location-arrow" ></i></button>  
-    </form>
-  </div>
-</main>
-<main class="contacticons col-12">
-
     
-    <div class="tool" id="facebook">
-        <div class="tooltxt">Facebook</div>
-        <div class="toolicons">
-           <i class="fab fa-facebook"></i>
-        </div>
-    </div>
-    <div class="tool" id="twitter">
-        <div class="tooltxt">twitter</div>
-        <div class="toolicons">
-           <i class="fab fa-facebook"></i>
-        </div>
-    </div>
-    <div class="tool" id="instagram">
-        <div class="tooltxt">Instagram</div>
-        <div class="toolicons">
-          <i class="fab fa-facebook"></i>
-        </div>
-    </div>
-    <div class="tool" id="youtube">
-        <div class="tooltxt">Youtube</div>
-        <div class="toolicons">
-          <i class="fab fa-facebook"></i>
-        </div>
-    </div>
+   
+    <div class="container margin-top-50  contact-form" onmouseover="blockAmination()">
+      <div class="row main">
+          <div class="col-md-4  col-12 text  " id="blockAnimation" >
+              <h3 class="text-center pt-3"> Contact Us</h3>
+
+              <h2 class="pt-5"> Lets Talk <br>  <b class="mx-5">About You</b> </h2>
+              <div class="row " style="height: 100%;">
+                      <div class="leftangle col-12" data-aos="fade-left"></div>
+                      <div class="rightangle col-12" data-aos="fade-right"></div>
+
+              </div>
+          </div>
+          <div class="col-md-8 col-12 form ">    <form action="" class="form-inline">
+              <div class="form-group group">
+                <label class="mr-auto" for="">Name</label>
+                <input type="text" onkeypress="valid(this)" class="form-control valid  w-75" placeholder="Enter Your Name" required>
+              </div>
+              <div class="form-group group2">
+                <label class="mr-auto" for="">Phone</label>
+                <input  onkeypress="valid2()" type="tel" class="form-control valid2  w-75" placeholder="phone number" required>
+              </div>
+              <div class="form-group group3">
+                <label class="mr-auto"  id="email" for="">Email</label>
+                <input  onkeypress="valid3()" type="email" class="form-control email  valid3 w-75" placeholder="Enter Your Email" required>
+              </div>
+              <div class="form-message mb-5">
+        
+                <label for="" class="text-left">Message</label>
+                <textarea  name="" id="" cols="30" rows="4" class="ml-auto form-control"></textarea>
+              
+              </div>
+            <button type="submit" class="btn btn2 w-100 d-block" id="btn-2">Send <i class="fas fa-location-arrow" ></i></button>  
+            </form>
+            <div class="form-icons col-12" data-aos="fade-left">
+              <a class="fab fa-facebook"></a>
+              <a class="fab fa-github"></a>
+              <a class="fab fa-linkedin"></a>
+              <a class="fas fa-map"></a>
+            </div>
+          </div>
+      </div>
 
 </div>
-</main>
-</div>
-    </section> 
-<footer>
+<footer class="container margin-top-50 bg-dark " >
+<div class="row">
+  <div class="col-sm-6 py-5  footer-bx col-12">
+  <h3 class="mb-3 text-left">About Me</h3>
+<p class="text-center"> I am making a project of website template , My Dream Is Make Full Stack Developer . we have aa number of registry fix and clean untilities and Present My Two Template , Working Carry On </p>
 
+<p class="text-left">Copyright <i class="fas fa-copyright"></i>2022 All Rights reserved | This Template is Made by <span style="color: var(--info);">Ahmer ALi</span> <i class="fas fa-heart"></i> </p>  
+</div>
+  <div class="col-sm-6 py-5 footer-email footer-bx col-12">
+    <h3 class="text-left mb-3 ">New sletter</h3>
+    <p class="text-left">Stay Update with our lasted trend</p>
+      <div class="form-group ">
+        <input type="email" name="" id="" class="form-control" placeholder="Enter Email Address" >
+        <button class="btn btn3 " id="btn-7"><i class="fas fa-arrow-right"></i></button>
+
+      </div>
+  </div> 
+  <div class="col-sm-6 py-2 footer-bx col-12">
+    <h3 class="text-left mb-3">Follow Me</h3>
+    <p>lets us be Social</p>
+   <div class="">
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-github"></i>
+     <i class="fab fa-linkedin"></i>
+    </div>
+     
+  </div>
+  
+</div>
 
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="lib/anime.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       AOS.init({
@@ -348,6 +397,10 @@
         duration: 500,
         delay: 70,
       });
+
+      
+
     </script>
   </body>
+
 </html>

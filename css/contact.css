@@ -1,0 +1,207 @@
+#contact{height: 120vh; display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;}
+.contacticons{
+    width:auto;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    bottom:  5%;
+    left: 10%;
+    transform: translateY(10%);  
+    display: grid;
+    grid-template-columns:repeat(4 , 150px)  ;
+    gap: 10px;
+    z-index: 232;
+}
+@media (max-width:876px) {
+    #contact{ height: 130vh; }
+    .contacticons{
+width: 100%;
+        height: 380px;
+        grid-template-columns:repeat(2 , 120px)  ;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 65%;
+        left: 0;
+        /* transform: translate(-50%-50%); */
+    }
+    .tool{height: 120px;}
+    .personal-info{
+        height: 50vh;
+    }
+    .personal-info .imgbox{
+        height: 100% ;
+    }
+    .personal-content{
+        height: 100% !important;
+
+    }
+}
+@media (max-width:568px) {
+    .contacticons{
+width: 50%;
+        height: auto;
+        grid-template-columns:repeat(2 , 100px)  ;
+        justify-content: center;
+        align-items: center;
+    }
+    .tool{height: 100px;}
+}
+@media (max-width:375px) {
+    #contact{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .contacticons{
+        position: relative;
+width: 100%;
+left: 0;
+height: auto;
+        grid-template-columns:repeat(2, 100px)  ;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 50px;
+
+    }
+    .tool{height: 100px;}
+    
+}
+@media (max-width:568px) {
+    .personal-info{
+        height: 75vh;
+    }
+    .personal-info .imgbox{
+        height: 50% ;
+    }
+    .personal-content{
+        height: 50% !important;
+
+    }
+}
+ .tool{
+     
+     transition: 0.5s;
+    height: 180px;
+    z-index: 200;
+    
+}
+ .tooltxt{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 3px;
+display: flex;justify-content: center;align-items: center;
+    font-family: 'Times New Roman';
+    transform: translate(0 , -14%);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.603);
+    transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.5);
+    z-index: 0 ;
+    opacity: 0;
+    pointer-events: none;
+    }
+    
+    #facebook:hover  .toolicons{
+        background-color: blue;} 
+        #facebook:hover  .toolicons .img{
+    background-color: blue;
+    
+}
+#facebook:hover  .tooltxt
+{
+    opacity: 1;
+    color: white;
+    background-color: blue;
+    pointer-events: auto;
+}
+#facebook:hover .tooltxt::before{background-color:blue;}
+/* twiter */
+#twitter:hover  .toolicons{
+    box-shadow: 10px 5px 7px rgba(0, 0, 0, 0.63);
+    background-color:  green;
+} 
+#twitter:hover  .tooltxt
+{
+    opacity: 1;
+    color: white;
+    background-color: green;
+    pointer-events: auto;
+}
+#twitter:hover .tooltxt::before{background-color: green;}
+/* github */
+#github:hover  .toolicons{
+    box-shadow: 10px 5px 7px rgba(0, 0, 0, 0.63);
+    background:black;
+} 
+
+#github:hover  .tooltxt
+{
+    opacity: 1;
+    color: white;
+    background:black;
+    pointer-events: auto;
+}
+#github:hover .tooltxt::before{ background: black;}
+        /* linkedin */
+#linkedin:hover  .toolicons{
+    box-shadow: 10px 5px 7px rgba(0, 0, 0, 0.63);
+    background: rgb(51, 108, 212);
+} 
+
+#linkedin:hover  .tooltxt
+{
+    opacity: 1;
+    color: white;
+    background: rgb(51, 108, 212);
+    pointer-events: auto;
+}
+#youtube:hover .tooltxt::before{ background: rgb(51, 108, 212);}
+
+.social .tooltxt::before{
+    content: "";
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.603);
+    
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.5);
+    z-index: -1;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+top: 0;
+left: 0;
+transform: translate(110% , 110%) rotate(45deg);
+
+}
+.toolicons{
+    position: relative;
+    width: 100%;
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.603);
+    height: 65%;
+    border-radius: 50%;
+ display: grid;
+ place-items: center;   
+}
+.toolicons span{
+    width: 50%;
+    height: 50%;
+    border-radius:50% ;
+display: grid;
+place-items: center;
+transition: 0.5s;
+}
+.toolicons span i{
+    font-size: 30px;
+    color: white;
+}
+.tool:hover span {background-color: white; }
+.tool:hover span i{color: black;}
+span.fb{ background: blue;}
+span.github{background: black;}
+span.link{ background: rgb(51, 108, 212);}
+span.tw{ background: green;}

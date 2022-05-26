@@ -7,4 +7,4 @@
 //     const inputvalid = document.querySelector('.form-control');
 //     inputvalid.classList.add('is-valid');
 //       group.classList.add('active');  
-// });
+//
