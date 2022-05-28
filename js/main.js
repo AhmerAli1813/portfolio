@@ -109,3 +109,17 @@ function blockAmination(){
     loop:true
   })
 }
+var typed = new Typed('#textAnimation', {
+  strings: [
+    "",
+      "  Ahmer ALi",
+      "  web Designer ",
+      "  UI/UX Designer",
+       "",
+      "  Hi i am  <i style='color: var(--info)'> Ahmer Ali</i>",
+      "  Hi i am  <i style='color: var(--info)'> Web Designer</i>",
+      " Hi i am  <i style='color: var(--info)'> UI/UX Designer</i>",
+  ],
+  typeSpeed: 60,
+  backSpeed: 60,
+});
