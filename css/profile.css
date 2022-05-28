@@ -19,11 +19,12 @@ p{
     font-family: 'FELL Great Primer', sans-serif;
 
 }
-
-
-
-#textAnimation i{
-    color: #1abc9c
+#textAnimate{
+    position: relative;
+}
+#textAnimate span{
+    position: relative;
+    display: inline-block;
 }
 
 hr{color: gray; background: gray;}
@@ -168,7 +169,7 @@ opacity: 0.5;
 
 .slider-content h1{
     font-size: 2.5rem !important;
-    /* color: var(--darkgreen2); */
+    color: var(--darkgreen2);
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 10px;
@@ -225,6 +226,7 @@ box-shadow: 1px 2px 7px rgba( 0 ,0, 0, 0.3);
 section .bio{
     height: 100vh;
     /* z-index: -1; */
+    background: red;
 }
 .bio .bio-box{
     height: 80%;
@@ -343,6 +345,7 @@ bottom: 0;
 /* section 2 compeleat */
 /* section 3 start */
 #details{
+    min-height: 61rem;
     height: auto;
 }
 .personal-info{
@@ -398,7 +401,7 @@ overflow: hidden;
     /* background: #d5d5d5; */
 }
 .service-info{
-    height:70vh;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -428,7 +431,9 @@ box-shadow: 0 20px  5px var(--info),
 /* section 3 Compeleate */
 /* section 4 :start here */
 #project{
-height: 150vh;
+min-height: 61rem;
+height: auto;
+margin:  0 auto;
 
 }
 .gallery{
@@ -454,7 +459,7 @@ background:linear-gradient(180deg, var(--darkgreen1), var(--info) ,var(--lightgr
 /* section 4 compelete */
 /* section 5 start */
 .skills{
-    height: auto;
+    height: 70vh;
 }
 @media (max-width:400px) {
     .skills{

@@ -1,4 +1,4 @@
-.profile span.blockAnimationactive{
+.profile span{
     animation: aminate 5s linear infinite;
    }
    @keyframes  aminate{
